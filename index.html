@@ -9,16 +9,20 @@
 
         <title>Super Awesome Team B</title>
 
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/teambgrid.css">
+        <link rel="stylesheet" href="css/styles.css">
+
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
     <body>
         <!-- 960 style container for CSS -->
-        <div class="container">
-            <header class="main-header">
-            <div id="logo"><img src="HTML5.jpg" width="150" height="132" alt="HTML5 Image in Orange color"/></div>
-              <nav id="Top">
+        <div class="container row">
+            <header class="main-header row">
+            <div id="logo" class="col-6"><img src="img/HTML5.jpg" width="150" height="132" alt="HTML5 Image in Orange color"/></div>
+              <nav id="top" class="col-6">
             	  <a href="#Wk1">Wk1</a>
             	  <a href="#Wk2">Wk2</a>
             	  <a href="#Wk3">Wk3</a>
@@ -28,11 +32,23 @@
             </header>
 
             <!-- Jumbotron -->
-            <section class="hero">
-                <h1>WEB407 Week 2 Learning Team Assignment</h1>
-                <h2>Learning Team B</h2>
-                <h2>WEB/407</h2>
-            </section>
+            <div class="row">
+                <section class="hero">
+                    <div class="col-12">
+                        <h1>WEB407 Week 2 Learning Team Assignment</h1>
+                    </div>
+
+                    <div class="col-6 innerline">
+                        <h2>Learning Team B</h2>
+                    </div>
+                    <div class="col-6 innerline">
+                        <h2>WEB/407</h2>
+                    </div>
+
+
+                </section>
+            </div>
+
 
             <hr>
 
@@ -144,5 +160,11 @@
             <!--disclaimer and contact info goes here-->
             <footer>Created by &copy; Team B</footer>
         </div>
+
+
+
+
+        <!-- JAVASCRIPT -->
+        <script src="js/app.js"></script>
     </body>
 </html>
