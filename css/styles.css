@@ -13,6 +13,8 @@ div .main-header {
     padding: 0;
     margin: 0 auto;
     background-color: blue;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 5px #999999;
 }
 
 /*******************
@@ -24,6 +26,11 @@ div .main-header {
     border-radius: 100%;
 }
 
+#logo img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 /*******************
     NAVBAR
 ******************/
@@ -33,7 +40,7 @@ div .main-header {
 }
 
 .main-header #top a {
-    color: #ffffff;
+    color: #ff7f50;;
     padding: 10px;
     font-size: 30px;
     text-decoration: none;
@@ -41,6 +48,7 @@ div .main-header {
 
 .main-header #top a:hover {
     font-size: 40px;
+    text-shadow: 1px 5px 1px #ffffff;
 }
 
 .hero {
