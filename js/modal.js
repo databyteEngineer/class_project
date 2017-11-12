@@ -1,3 +1,5 @@
+
+
 // GEt Model Elements
 var modal = document.getElementById("andrew-modal");
 
@@ -30,7 +32,7 @@ function closeModal() {
 // Function to close modalBtn
 function clickOutside() {
     if(e.target == modal) {
-        modal.style.display = "none";        
+        modal.style.display = "none";
     }
 
 }
