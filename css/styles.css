@@ -12,9 +12,14 @@
 div .main-header {
     padding: 0;
     margin: 0 auto;
-    background-color: blue;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 5px #999999;
+}
+
+.center {
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
 }
 
 /*******************
@@ -67,4 +72,79 @@ div .main-header {
     margin-top: 30px;
     font-size: 30px;
     font-family: monospace;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 1.7em;
+    margin: 50px 0 0 0;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.button {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 0 275px;
+    padding: 1em 2em;
+    color: #ffffff;
+    border: .2;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.button:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.classmate {
+    border-radius: 50%;
+}
+
+.stack-logo {
+    float: right;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .19);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen {
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
+.close-btn {
+    color: #666666;
+    float: right;
+    font-size: 20px;
+}
+
+
+.close-btn:hover, .close-btn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
 }
