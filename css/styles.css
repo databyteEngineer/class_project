@@ -87,7 +87,7 @@ footer {
 
 .button {
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 0 0 275px;
+    margin: 0 auto;
     padding: 1em 2em;
     color: #ffffff;
     border: .2;
